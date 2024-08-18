@@ -1,0 +1,69 @@
+{% extends './layout.html' %}
+{% load static %}
+
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'css/store/index.css' %}">
+{% endblock %}
+
+{% block body %}
+
+    <!-- Hero Start -->
+    <div class="container-fluid hero py-5 pe-lg-5">
+        <div class="side"></div>
+        <div class="wrapper">
+            <div class="text-light text">
+                <h1 class="text-uppercase lh-1">
+                    <span class="fw-bold">special</span><br>
+                    <span class="fw-normal fst-italic">fashion</span>
+                </h1>
+                <p class="fs-3 fst-italic lh-1">debut of our exclusive<br>Stelliot couture!</p>
+                <div class="box"></div>
+            </div>
+        </div>
+        <div class="hero-image"><img src="{% static 'img/cover.jpeg' %}" alt="Cover"></div>
+    </div>
+    <!-- Hero End -->
+
+    
+
+    <!-- Categories Start -->
+    <div class="container-fluid categories">
+        <div class="categories-main">
+            <div class="item item-even">
+                <img src="{% static 'img/cat-stilettos.png' %}" alt="Stilettos">
+                <p>Stilettos.</p>
+            </div>
+            <div class="item item-odd">
+                <img src="{% static 'img/cat-jacket.png' %}" alt="Jacket">
+                <p>Jackets.</p>
+            </div>
+            <div class="item item-even">
+                <img src="{% static 'img/cat-shoes.png' %}" alt="Shoes">
+                <p>Shoes.</p>
+            </div>
+            <div class="item item-odd">
+                <img src="{% static 'img/cat-bag.png' %}" alt="Bags">
+                <p>Bags.</p>
+            </div>
+        </div>
+        <div class="statement">
+            <p>every step is a statement, and every layer is luxury</p>
+        </div>
+    </div>
+    <!-- Categories End -->
+
+
+    <!-- Arrival Start -->
+    <div class="container-fluid arrival">
+        <div class="text">
+            <h1>New Arrivals</h1>
+            <p>We know you'll love!</p>
+        </div>
+        <div class="arrival-image">
+            <img src="{% static 'img/arrival.png' %}" alt="New Arrivals">
+        </div>
+    </div>
+    <!-- Arrival End -->
+
+{% endblock body %}
